@@ -6,6 +6,7 @@ package com.senfan.senfanoj.wxmp;
  **/
 public class WxMpConstant {
 
+
     /**
      * 点击菜单 key
      */
