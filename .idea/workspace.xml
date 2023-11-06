@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c83d37f8-9d78-4966-93b6-b078269c29d0" name="Default Changelist" comment="提交" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="168" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="my_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="senfanoj: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="senfanoj: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="question: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/software/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\software\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2VqSZ0SSn9wd3sDcJHRtShXNIM7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/model/dto" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.senfan.senfanoj.model.dto.questionsubmit" />
+      <recent name="com.senfan.senfanoj.model.vo" />
+      <recent name="com.senfan.senfanoj.model.enums" />
+      <recent name="com.senfan.senfanoj.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\OJ\senfanoj-backend\src\main\java\com\senfan\senfanoj\model\dto" />
+      <recent name="D:\project\OJ\senfanoj-backend\sql" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MainApplication (2)">
+    <configuration name="WxOpenConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.senfan.senfanoj.config.WxOpenConfig" />
+      <module name="senfanoj-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senfan.senfanoj.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="senfanoj-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.senfan.springbootinit.MainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="senfanoj-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senfan.senfanoj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.senfan.senfanoj.MainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="senfanoj-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yupi.springbootinit.MainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MainApplication (2)" />
+        <item itemvalue="Application.WxOpenConfig" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@f2f2cec" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c83d37f8-9d78-4966-93b6-b078269c29d0" name="Default Changelist" comment="" />
+      <created>1695562168903</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695562168903</updated>
+      <workItem from="1695562175428" duration="346000" />
+      <workItem from="1696579653110" duration="89000" />
+      <workItem from="1696579801777" duration="5596000" />
+      <workItem from="1696669811537" duration="8137000" />
+      <workItem from="1697436780544" duration="7101000" />
+      <workItem from="1697509980995" duration="1829000" />
+      <workItem from="1697589389152" duration="1636000" />
+      <workItem from="1697632710046" duration="614000" />
+      <workItem from="1697873235443" duration="1495000" />
+      <workItem from="1698152213459" duration="1306000" />
+      <workItem from="1698243456873" duration="780000" />
+      <workItem from="1699277179612" duration="1769000" />
+    </task>
+    <task id="LOCAL-00001" summary="提交">
+      <created>1699278019653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699278019653</updated>
+    </task>
+    <task id="LOCAL-00002" summary="提交">
+      <created>1699278053116</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699278053116</updated>
+    </task>
+    <task id="LOCAL-00003" summary="提交">
+      <created>1699278420904</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699278420904</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Notifications" timestamp="1699278084720">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1699278084720" />
+    <state x="552" y="180" width="816" height="681" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1696583215060">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="180" width="816" height="681" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1696583215060" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1696678563679">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1696678563679" />
+    <state x="715" y="222" key="#xdebugger.evaluate" timestamp="1696680326688">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="222" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1696680326687" />
+    <state x="382" y="111" key="CommitChangelistDialog2" timestamp="1699278678228">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="382" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1699278678228" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1697509099127">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1697509099127" />
+    <state x="814" y="410" key="Github.ShareDialog" timestamp="1699278728193">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="814" y="410" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1699278728193" />
+    <state width="938" height="646" key="GridCell.Tab.0.bottom" timestamp="1699278773366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="646" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1699278773366" />
+    <state width="938" height="646" key="GridCell.Tab.0.center" timestamp="1699278773366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="646" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1699278773366" />
+    <state width="938" height="646" key="GridCell.Tab.0.left" timestamp="1699278773366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="646" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1699278773366" />
+    <state width="938" height="646" key="GridCell.Tab.0.right" timestamp="1699278773366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="646" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1699278773366" />
+    <state width="938" height="646" key="GridCell.Tab.1.bottom" timestamp="1699278773367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="646" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1699278773367" />
+    <state width="938" height="646" key="GridCell.Tab.1.center" timestamp="1699278773366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="646" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1699278773366" />
+    <state width="938" height="646" key="GridCell.Tab.1.left" timestamp="1699278773366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="646" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1699278773366" />
+    <state width="938" height="646" key="GridCell.Tab.1.right" timestamp="1699278773366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="646" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1699278773366" />
+    <state width="938" height="646" key="GridCell.Tab.2.bottom" timestamp="1699278773367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="646" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1699278773367" />
+    <state width="938" height="646" key="GridCell.Tab.2.center" timestamp="1699278773367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="646" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1699278773367" />
+    <state width="938" height="646" key="GridCell.Tab.2.left" timestamp="1699278773367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="646" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1699278773367" />
+    <state width="938" height="646" key="GridCell.Tab.2.right" timestamp="1699278773367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="646" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1699278773367" />
+    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1696583224924">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1696583224924" />
+    <state x="679" y="175" key="SettingsEditor" timestamp="1699278158539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="175" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1699278158539" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1699278652021">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1699278652021" />
+    <state x="795" y="233" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1696667840349">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="795" y="233" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1696667840349" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1696670542420">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1696670542420" />
+    <state x="567" y="216" width="786" height="608" key="find.popup" timestamp="1699278193455">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="567" y="216" width="786" height="608" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1699278193455" />
+    <state x="330" y="215" key="new project wizard" timestamp="1699278475963">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="330" y="215" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1699278475963" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1699278134018">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1699278134018" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/springboot_init$MainApplication__2_.ic" NAME="MainApplication (2) Coverage Results" MODIFIED="1697509109596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.senfan.senfanoj.*</FILTER>
+    </SUITE>
+  </component>
+</project>
