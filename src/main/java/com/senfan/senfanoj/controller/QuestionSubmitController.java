@@ -8,7 +8,6 @@ import com.senfan.senfanoj.model.dto.questionsubmit.QuestionSubmitQueryRequest;
 import com.senfan.senfanoj.model.entity.Question;
 import com.senfan.senfanoj.model.entity.QuestionSubmit;
 import com.senfan.senfanoj.model.vo.QuestionSubmitVO;
-import com.senfan.senfanoj.model.vo.QuestionVO;
 import com.senfan.senfanoj.service.QuestionSubmitService;
 import com.senfan.senfanoj.common.BaseResponse;
 import com.senfan.senfanoj.common.ErrorCode;

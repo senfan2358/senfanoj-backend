@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.senfan.senfanoj.common.ErrorCode;
 import com.senfan.senfanoj.constant.CommonConstant;
 import com.senfan.senfanoj.exception.BusinessException;
+import com.senfan.senfanoj.judge.JudgeService;
 import com.senfan.senfanoj.model.dto.questionsubmit.QuestionSubmitAddRequest;
 import com.senfan.senfanoj.model.dto.questionsubmit.QuestionSubmitQueryRequest;
 import com.senfan.senfanoj.model.entity.Question;
@@ -22,10 +23,12 @@ import com.senfan.senfanoj.utils.SqlUtils;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 /**
@@ -33,13 +36,20 @@ import java.util.stream.Collectors;
  */
 @Service
 public class QuestionSubmitServiceImpl extends ServiceImpl<QuestionSubmitMapper, QuestionSubmit>
-    implements QuestionSubmitService{
+        implements QuestionSubmitService {
     @Resource
     QuestionService questionService;
+
     @Resource
     UserService userService;
+
+    @Lazy
+    @Resource
+    JudgeService judgeService;
+
     /**
      * 提交题目
+     *
      * @param questionSubmitAddRequest
      * @param loginUser
      * @return
@@ -49,14 +59,14 @@ public class QuestionSubmitServiceImpl extends ServiceImpl<QuestionSubmitMapper,
         // 校验编程语言是否合法
         String language = questionSubmitAddRequest.getLanguage();
         QuestionSubmitLanguageEnum enumByValue = QuestionSubmitLanguageEnum.getEnumByValue(language);
-        if (enumByValue == null){
-            throw new BusinessException(ErrorCode.PARAMS_ERROR,"编程语言错误");
+        if (enumByValue == null) {
+            throw new BusinessException(ErrorCode.PARAMS_ERROR, "编程语言错误");
         }
         Long questionId = questionSubmitAddRequest.getQuestionId();
         // 判断实体是否存在，根据类型获取实体
         Question question = questionService.getById(questionId);
-        if (question == null){
-            throw  new BusinessException(ErrorCode.PARAMS_ERROR);
+        if (question == null) {
+            throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
         // 是否已提交题目
         Long userId = loginUser.getId();
@@ -70,16 +80,21 @@ public class QuestionSubmitServiceImpl extends ServiceImpl<QuestionSubmitMapper,
         questionSubmit.setStatus(QuestionSubmitStatusEnum.WAITING.getValue());
         questionSubmit.setJudgeInfo("{}");
         boolean save = this.save(questionSubmit);
-        if(!save){
-            throw new BusinessException(ErrorCode.SYSTEM_ERROR,"数据插入失败");
+        if (!save) {
+            throw new BusinessException(ErrorCode.SYSTEM_ERROR, "数据插入失败");
         }
-        return questionSubmit.getId();
+        Long questionSubmitId = questionSubmit.getId();
+        // 执行判题服务
+        CompletableFuture.runAsync(() -> {
+            judgeService.doJudge(questionSubmitId);
+        });
+        return questionSubmitId;
     }
 
     @Override
     public QueryWrapper<QuestionSubmit> getQueryWrapper(QuestionSubmitQueryRequest questionSubmitQueryRequest) {
         QueryWrapper<QuestionSubmit> queryWrapper = new QueryWrapper<>();
-        if (questionSubmitQueryRequest == null){
+        if (questionSubmitQueryRequest == null) {
             return queryWrapper;
         }
         String language = questionSubmitQueryRequest.getLanguage();
@@ -89,11 +104,11 @@ public class QuestionSubmitServiceImpl extends ServiceImpl<QuestionSubmitMapper,
         String sortField = questionSubmitQueryRequest.getSortField();
         String sortOrder = questionSubmitQueryRequest.getSortOrder();
         // 拼接查询条件
-        queryWrapper.eq(StringUtils.isNotBlank(language),"language",language);
-        queryWrapper.eq(ObjectUtils.isNotEmpty(userId),"userId",userId);
-        queryWrapper.eq(QuestionSubmitStatusEnum.getEnumByValue(status) != null,"status",status);
-        queryWrapper.eq("isDelete",false);
-        queryWrapper.orderBy(SqlUtils.validSortField(sortField),sortOrder.equals(CommonConstant.SORT_ORDER_ASC),
+        queryWrapper.eq(StringUtils.isNotBlank(language), "language", language);
+        queryWrapper.eq(ObjectUtils.isNotEmpty(userId), "userId", userId);
+        queryWrapper.eq(QuestionSubmitStatusEnum.getEnumByValue(status) != null, "status", status);
+        queryWrapper.eq("isDelete", false);
+        queryWrapper.orderBy(SqlUtils.validSortField(sortField), sortOrder.equals(CommonConstant.SORT_ORDER_ASC),
                 sortField);
         return queryWrapper;
     }
@@ -114,7 +129,7 @@ public class QuestionSubmitServiceImpl extends ServiceImpl<QuestionSubmitMapper,
     public Page<QuestionSubmitVO> getQuestionSubmitVOPage(Page<QuestionSubmit> questionSubmitPage, User loginUser) {
         List<QuestionSubmit> questionSubmitList = questionSubmitPage.getRecords();
         Page<QuestionSubmitVO> questionSubmitVOPage = new Page<>(questionSubmitPage.getCurrent(), questionSubmitPage.getSize(), questionSubmitPage.getTotal());
-        if (CollectionUtils.isEmpty(questionSubmitList)){
+        if (CollectionUtils.isEmpty(questionSubmitList)) {
             return questionSubmitVOPage;
         }
         List<QuestionSubmitVO> questionSubmitVOList = questionSubmitList.stream().
