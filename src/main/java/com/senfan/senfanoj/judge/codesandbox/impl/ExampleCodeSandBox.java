@@ -3,7 +3,7 @@ package com.senfan.senfanoj.judge.codesandbox.impl;
 import com.senfan.senfanoj.judge.codesandbox.CodeSandBox;
 import com.senfan.senfanoj.judge.codesandbox.model.ExecuteCodeRequest;
 import com.senfan.senfanoj.judge.codesandbox.model.ExecuteCodeResponse;
-import com.senfan.senfanoj.model.dto.questionsubmit.JudgeInfo;
+import com.senfan.senfanoj.judge.codesandbox.model.JudgeInfo;
 import com.senfan.senfanoj.model.enums.JudgeInfoMessageEnum;
 import com.senfan.senfanoj.model.enums.QuestionSubmitStatusEnum;
 

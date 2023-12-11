@@ -1,9 +1,9 @@
 package com.senfan.senfanoj.judge.strategy;
 
 import cn.hutool.json.JSONUtil;
+import com.senfan.senfanoj.judge.codesandbox.model.JudgeInfo;
 import com.senfan.senfanoj.model.dto.question.JudgeCase;
 import com.senfan.senfanoj.model.dto.question.JudgeConfig;
-import com.senfan.senfanoj.model.dto.questionsubmit.JudgeInfo;
 import com.senfan.senfanoj.model.entity.Question;
 import com.senfan.senfanoj.model.enums.JudgeInfoMessageEnum;
 

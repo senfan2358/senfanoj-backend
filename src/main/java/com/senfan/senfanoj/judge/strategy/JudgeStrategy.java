@@ -1,6 +1,6 @@
 package com.senfan.senfanoj.judge.strategy;
 
-import com.senfan.senfanoj.model.dto.questionsubmit.JudgeInfo;
+import com.senfan.senfanoj.judge.codesandbox.model.JudgeInfo;
 
 /**
  * 判题策略
