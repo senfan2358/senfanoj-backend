@@ -1,0 +1,23 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+**/.idea
+**/*.iml
+**/.project
+**/.classpath
+**/.settings
+out
+gen
+**/bin/
+**/target/
+**/logs/
+
+# VS Code
+**/.vscode
+**/.factorypath
+
+# vue
+**/package-lock.json

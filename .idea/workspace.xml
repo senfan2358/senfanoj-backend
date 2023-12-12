@@ -1,53 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c83d37f8-9d78-4966-93b6-b078269c29d0" name="Default Changelist" comment="提交">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/JudgeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/JudgeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/JudgeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/CodeSandBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/CodeSandBoxFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/CodeSandBoxProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/ExampleCodeSandBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/RemoteCodeSandBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/ThirdPartyCodeSandBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/model/ExecuteCodeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/model/ExecuteCodeResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/strategy/DefaultJudgeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/strategy/JavaLanguageJudgeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/strategy/JudgeContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/strategy/JudgeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/senfan/senfanoj/judge/codesandbox/CodeSandBoxTest.java" afterDir="false" />
+    <list default="true" id="c83d37f8-9d78-4966-93b6-b078269c29d0" name="Default Changelist" comment="实现Java代码编译">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03bafbd1b8fcd4a5a00aaeaf940af84856184a13" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b7522e5761f1dbe1c26220deda404e92019d28b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/36dc4878df99ef89652f6f68cf02fca35c1cb493" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/62d36580b4e49fca9aee56e792cc3cc03b70a3d6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9d19173851b994f594ca884a224d4e178879df13" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/3/03bafbd1b8fcd4a5a00aaeaf940af84856184a13" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/b/0b7522e5761f1dbe1c26220deda404e92019d28b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/6/36dc4878df99ef89652f6f68cf02fca35c1cb493" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/2/62d36580b4e49fca9aee56e792cc3cc03b70a3d6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/d/9d19173851b994f594ca884a224d4e178879df13" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/security/MySecurityManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/security/MySecurityManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testCode/unsafeCode/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testCode/unsafeCode/RunFileError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/木马程序.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/senfan/senfanoj/judge/codesandbox/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/JudgeManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/JudgeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/JudgeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/CodeSandBox.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/CodeSandBoxFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/CodeSandBoxProxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/impl/ExampleCodeSandBox.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/impl/JavaNativeCodeSandbox.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/impl/RemoteCodeSandBox.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/impl/ThirdPartyCodeSandBox.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/model/ExecuteCodeRequest$ExecuteCodeRequestBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/model/ExecuteCodeRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/model/ExecuteCodeResponse$ExecuteCodeResponseBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/model/ExecuteCodeResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/model/JudgeInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/strategy/DefaultJudgeStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/strategy/JavaLanguageJudgeStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/strategy/JudgeContext.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/strategy/JudgeStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/model/dto/codeExecute/ExecuteMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/security/DefaultSecurityManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/security/DenySecurityManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/security/MySecurityManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/security/TestSecurityManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/unsafe/MemoryError.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/unsafe/ReadFileError.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/unsafe/RunFileError.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/unsafe/SimpleCompute.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/unsafe/SleepError.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/unsafe/WriteFileError.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/utils/ProcessUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/security/MySecurityManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/security/MySecurityManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/testCode/unsafeCode/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/testCode/unsafeCode/RunFileError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/木马程序.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/judge/codesandbox/CodeSandBoxTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/judge/codesandbox/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/controller/QuestionSubmitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/controller/QuestionSubmitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/service/impl/QuestionSubmitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/service/impl/QuestionSubmitServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senfan/springbootinit/MainApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senfan/springbootinit/esdao/PostEsDaoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senfan/springbootinit/manager/CosManagerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senfan/springbootinit/mapper/PostFavourMapperTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senfan/springbootinit/mapper/PostMapperTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senfan/springbootinit/service/PostFavourServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senfan/springbootinit/service/PostServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senfan/springbootinit/service/PostThumbServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senfan/springbootinit/service/UserServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/senfan/springbootinit/utils/EasyExcelTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/controller/QuestionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/controller/QuestionSubmitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/controller/QuestionSubmitController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/service/impl/QuestionSubmitServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/service/impl/QuestionSubmitServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/MainApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/esdao/PostEsDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/manager/CosManagerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/mapper/PostFavourMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/mapper/PostMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/service/PostFavourServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/service/PostServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/service/PostThumbServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/service/UserServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/utils/EasyExcelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/senfanoj-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/senfanoj-backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/JavaNativeCodeSandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/JavaNativeCodeSandbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/security/MySecurityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/security/MySecurityManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +133,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -128,51 +160,88 @@
   <component name="ProjectId" id="2VqSZ0SSn9wd3sDcJHRtShXNIM7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/strategy" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "last_opened_file_path": "E:/project/senfanoj-backend",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.senfan.senfanoj.judge.codesandbox" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.senfan.senfanoj.judge" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.senfan.senfanoj.judge" />
-      <recent name="com.senfan.senfanoj.judge.codesandbox.impl" />
-      <recent name="com.senfan.senfanoj.judge.codesandbox.model" />
-      <recent name="com.senfan.senfanoj.model.dto.questionsubmit" />
-      <recent name="com.senfan.senfanoj.model.vo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\senfanoj-backend" />
+      <recent name="E:\project\senfanoj-backend\src\main\resources" />
       <recent name="D:\project\OJ\senfanoj-backend\src\main\java\com\senfan\senfanoj\judge\strategy" />
       <recent name="D:\project\OJ\senfanoj-backend\src\main\java\com\senfan\senfanoj\model\dto" />
       <recent name="D:\project\OJ\senfanoj-backend\sql" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\senfanoj-backend\src\main\resources\testCode\unsafeCode" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.senfan.senfanoj.judge.codesandbox" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="security" />
+      <recent name="testCode.unsafeCode" />
+      <recent name="com.senfan.senfanoj.judge" />
+      <recent name="com.senfan.senfanoj.judge.codesandbox.impl" />
+      <recent name="com.senfan.senfanoj.judge.codesandbox.model" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MainApplication (2)">
+  <component name="RunManager" selected="Application.JavaNativeCodeSandbox">
+    <configuration name="CodeSandBoxTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.senfan.senfanoj.judge.codesandbox.CodeSandBoxTest" />
+      <module name="senfanoj-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senfan.senfanoj.judge.codesandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaNativeCodeSandbox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.senfan.senfanoj.judge.codesandbox.impl.JavaNativeCodeSandbox" />
+      <module name="senfanoj-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senfan.senfanoj.judge.codesandbox.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.senfan.senfanoj.MainApplication" />
+      <module name="senfanoj-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.senfan.senfanoj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WxOpenConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.senfan.senfanoj.config.WxOpenConfig" />
       <module name="senfanoj-backend" />
@@ -209,19 +278,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="senfanoj-backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.senfan.senfanoj.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.senfan.senfanoj.MainApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="senfanoj-backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yupi.springbootinit.MainApplication" />
@@ -231,8 +287,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.MainApplication (2)" />
+        <item itemvalue="Application.JavaNativeCodeSandbox" />
+        <item itemvalue="Application.CodeSandBoxTest" />
         <item itemvalue="JUnit.CodeSandBoxTest.executeCode" />
+        <item itemvalue="Application.MainApplication" />
         <item itemvalue="Application.WxOpenConfig" />
       </list>
     </recent_temporary>
@@ -259,6 +317,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -312,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699279516463</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="实现Java代码编译">
+      <created>1702288895544</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702288895544</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,9 +389,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -334,148 +398,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交" />
     <MESSAGE value="提交测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交测试" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Notifications" timestamp="1699278084720">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1699278084720" />
-    <state x="552" y="180" width="816" height="681" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1696583215060">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="180" width="816" height="681" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1696583215060" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1699366617957">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1699366617957" />
-    <state x="628" y="244" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1699362819276">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="628" y="244" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1699362819276" />
-    <state x="715" y="222" key="#xdebugger.evaluate" timestamp="1699364056926">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="715" y="222" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1699364056926" />
-    <state x="382" y="88" key="CommitChangelistDialog2" timestamp="1699369477500">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="382" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1699369477500" />
-    <state width="910" height="582" key="DebuggerActiveHint" timestamp="1699369322635">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="910" height="582" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1699369322635" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1697509099127">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1697509099127" />
-    <state x="814" y="410" key="Github.ShareDialog" timestamp="1699278728193">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="814" y="410" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1699278728193" />
-    <state width="1867" height="487" key="GridCell.Tab.0.bottom" timestamp="1699369353500">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="487" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1699369353500" />
-    <state width="1867" height="487" key="GridCell.Tab.0.center" timestamp="1699369353499">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="487" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1699369353499" />
-    <state width="1867" height="487" key="GridCell.Tab.0.left" timestamp="1699369353499">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="487" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1699369353499" />
-    <state width="1867" height="487" key="GridCell.Tab.0.right" timestamp="1699369353499">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="487" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1699369353499" />
-    <state width="1867" height="530" key="GridCell.Tab.1.bottom" timestamp="1699369379723">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="530" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1699369379723" />
-    <state width="1867" height="530" key="GridCell.Tab.1.center" timestamp="1699369379721">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="530" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1699369379721" />
-    <state width="1867" height="530" key="GridCell.Tab.1.left" timestamp="1699369379721">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="530" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1699369379721" />
-    <state width="1867" height="530" key="GridCell.Tab.1.right" timestamp="1699369379722">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="530" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1699369379722" />
-    <state width="1867" height="487" key="GridCell.Tab.2.bottom" timestamp="1699369353367">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="487" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1699369353367" />
-    <state width="1867" height="487" key="GridCell.Tab.2.center" timestamp="1699369353367">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="487" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1699369353367" />
-    <state width="1867" height="487" key="GridCell.Tab.2.left" timestamp="1699369353366">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="487" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1699369353366" />
-    <state width="1867" height="487" key="GridCell.Tab.2.right" timestamp="1699369353367">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1867" height="487" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1699369353367" />
-    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1696583224924">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1696583224924" />
-    <state x="679" y="157" width="1141" height="883" key="SettingsEditor" timestamp="1699367036007">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="679" y="157" width="1141" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1699367036007" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1699279523765">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1699279523765" />
-    <state x="795" y="233" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1696667840349">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="795" y="233" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1696667840349" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1696670542420">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1696670542420" />
-    <state x="753" y="208" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1699280821248">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="753" y="208" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1699280821248" />
-    <state x="649" y="171" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1699362873244">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="649" y="171" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1699362873244" />
-    <state x="567" y="216" width="786" height="608" key="find.popup" timestamp="1699280828714">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="567" y="216" width="786" height="608" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1699280828713" />
-    <state x="330" y="215" key="new project wizard" timestamp="1699278475963">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="330" y="215" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1699278475963" />
-    <state x="642" y="81" key="refactoring.ChangeSignatureDialog" timestamp="1699368573058">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="642" y="81" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1699368573058" />
-    <state x="532" y="237" key="run.anything.popup" timestamp="1699369326188">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1699369326188" />
-    <state x="623" y="225" width="840" height="678" key="search.everywhere.popup" timestamp="1699362493154">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="840" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1699362493154" />
+    <MESSAGE value="实现Java代码编译" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现Java代码编译" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/senfan/senfanoj/judge/codesandbox/CodeSandBoxTest.java</url>
-          <line>33</line>
+          <line>42</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -502,6 +433,61 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/ExampleCodeSandBox.java</url>
           <line>17</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/controller/UserController.java</url>
+          <line>255</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/senfan/senfanoj/judge/codesandbox/CodeSandBoxTest.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/utils/ProcessUtils.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/utils/ProcessUtils.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/senfan/senfanoj/judge/codesandbox/CodeSandBoxTest.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/utils/ProcessUtils.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/JavaNativeCodeSandbox.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/JavaNativeCodeSandbox.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/JavaNativeCodeSandbox.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/JavaNativeCodeSandbox.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/JavaNativeCodeSandbox.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

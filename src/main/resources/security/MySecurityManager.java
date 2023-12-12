@@ -1,5 +1,3 @@
-package com.senfan.senfanoj.security;
-
 import java.security.Permission;
 
 public class MySecurityManager extends SecurityManager {

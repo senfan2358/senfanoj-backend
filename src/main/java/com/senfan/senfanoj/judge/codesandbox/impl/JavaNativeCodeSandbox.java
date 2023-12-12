@@ -9,7 +9,6 @@ import com.senfan.senfanoj.judge.codesandbox.model.ExecuteCodeRequest;
 import com.senfan.senfanoj.judge.codesandbox.model.ExecuteCodeResponse;
 import com.senfan.senfanoj.judge.codesandbox.model.JudgeInfo;
 import com.senfan.senfanoj.model.dto.codeExecute.ExecuteMessage;
-import com.senfan.senfanoj.security.DenySecurityManager;
 import com.senfan.senfanoj.utils.ProcessUtils;
 
 import java.io.File;
@@ -20,13 +19,13 @@ import java.util.List;
 import java.util.UUID;
 
 public class JavaNativeCodeSandbox implements CodeSandBox {
-    private static final String GLOBAL_CODE_DIR_NAME = "tmpCode";
+    private static final String GLOBAL_CODE_DIR_NAME = "code";
 
     private static final String GLOBAL_JAVA_CLASS_NAME = "Main.java";
 
     private static final long TIME_OUT = 10000L;
 
-    private static final String SECURITY_MANAGER_PATH = "D:\\project\\OJ\\senfanoj-backend\\src\\main\\resources\\security";
+    private static final String SECURITY_MANAGER_PATH = "E:\\project\\senfanoj-backend\\src\\main\\resources\\security";
 
     private static final String SECURITY_MANAGER_CLASS_NAME = "MySecurityManager";
 
@@ -45,7 +44,7 @@ public class JavaNativeCodeSandbox implements CodeSandBox {
         ExecuteCodeRequest executeCodeRequest = new ExecuteCodeRequest();
         executeCodeRequest.setInputList(Arrays.asList("1 2", "1 3"));
         // String code = ResourceUtil.readStr("testCode/simpleComputeArgs/Main.java", StandardCharsets.UTF_8);
-        String code = ResourceUtil.readStr("D:\\project\\OJ\\senfanoj-backend\\src\\main\\java\\com\\senfan\\senfanoj\\unsafe\\RunFileError.java", StandardCharsets.UTF_8);
+        String code = ResourceUtil.readStr("testCode/unsafeCode/Main.java", StandardCharsets.UTF_8);
         // String code = ResourceUtil.readStr("testCode/simpleCompute/Main.java", StandardCharsets.UTF_8);
         executeCodeRequest.setCode(code);
         executeCodeRequest.setLanguage("java");
@@ -145,14 +144,14 @@ public class JavaNativeCodeSandbox implements CodeSandBox {
         JudgeInfo judgeInfo = new JudgeInfo();
         judgeInfo.setTime(maxTime);
         // 要借助第三方库来获取内存占用，非常麻烦，此处不做实现
-       // judgeInfo.setMemory();
+        // judgeInfo.setMemory();
 
         executeCodeResponse.setJudgeInfo(judgeInfo);
 
-       // 5. 文件清理
+        // 5. 文件清理
         if (userCodeFile.getParentFile() != null) {
-            // boolean del = FileUtil.del(userCodeParentPath);
-            // System.out.println("删除" + (del ? "成功" : "失败"));
+            boolean del = FileUtil.del(userCodeParentPath);
+            System.out.println("删除" + (del ? "成功" : "失败"));
         }
         return executeCodeResponse;
     }
