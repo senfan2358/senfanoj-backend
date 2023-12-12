@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c83d37f8-9d78-4966-93b6-b078269c29d0" name="Default Changelist" comment="实现Java代码编译">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="c83d37f8-9d78-4966-93b6-b078269c29d0" name="Default Changelist" comment="流程测试调整完毕">
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03bafbd1b8fcd4a5a00aaeaf940af84856184a13" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b7522e5761f1dbe1c26220deda404e92019d28b" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/36dc4878df99ef89652f6f68cf02fca35c1cb493" afterDir="false" />
@@ -21,55 +18,20 @@
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/d/9d19173851b994f594ca884a224d4e178879df13" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/security/MySecurityManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/security/MySecurityManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/testCode/unsafeCode/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/testCode/unsafeCode/RunFileError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/木马程序.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/senfan/senfanoj/judge/codesandbox/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/JudgeManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/JudgeService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/JudgeServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/CodeSandBox.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/CodeSandBoxFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/CodeSandBoxProxy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/impl/ExampleCodeSandBox.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/impl/JavaNativeCodeSandbox.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/impl/RemoteCodeSandBox.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/impl/ThirdPartyCodeSandBox.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/model/ExecuteCodeRequest$ExecuteCodeRequestBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/model/ExecuteCodeRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/model/ExecuteCodeResponse$ExecuteCodeResponseBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/model/ExecuteCodeResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/codesandbox/model/JudgeInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/strategy/DefaultJudgeStrategy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/strategy/JavaLanguageJudgeStrategy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/strategy/JudgeContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/judge/strategy/JudgeStrategy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/model/dto/codeExecute/ExecuteMessage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/security/DefaultSecurityManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/security/DenySecurityManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/security/MySecurityManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/security/TestSecurityManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/unsafe/MemoryError.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/unsafe/ReadFileError.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/unsafe/RunFileError.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/unsafe/SimpleCompute.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/unsafe/SleepError.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/unsafe/WriteFileError.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/senfan/senfanoj/utils/ProcessUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/security/MySecurityManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/security/MySecurityManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/testCode/unsafeCode/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/testCode/unsafeCode/RunFileError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/木马程序.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/judge/codesandbox/CodeSandBoxTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/senfan/senfanoj/judge/codesandbox/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testCode/unsafeCode/ReadFileError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/senfanoj-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/senfanoj-backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/JavaNativeCodeSandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/judge/codesandbox/impl/JavaNativeCodeSandbox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/security/MySecurityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/senfan/senfanoj/security/MySecurityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/security/MySecurityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/security/MySecurityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/security/MySecurityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/security/MySecurityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/security/MySecurityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/security/MySecurityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/security/MySecurityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/security/MySecurityManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +130,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "last_opened_file_path": "E:/project/senfanoj-backend",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -195,8 +157,8 @@
       <recent name="com.senfan.senfanoj.judge.codesandbox" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="security" />
       <recent name="testCode.unsafeCode" />
+      <recent name="security" />
       <recent name="com.senfan.senfanoj.judge" />
       <recent name="com.senfan.senfanoj.judge.codesandbox.impl" />
       <recent name="com.senfan.senfanoj.judge.codesandbox.model" />
@@ -242,12 +204,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WxOpenConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.senfan.senfanoj.config.WxOpenConfig" />
+    <configuration name="ReadFileError" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.senfan.senfanoj.unsafe.ReadFileError" />
       <module name="senfanoj-backend" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.senfan.senfanoj.config.*" />
+          <option name="PATTERN" value="com.senfan.senfanoj.unsafe.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -288,10 +250,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.JavaNativeCodeSandbox" />
+        <item itemvalue="Application.ReadFileError" />
         <item itemvalue="Application.CodeSandBoxTest" />
         <item itemvalue="JUnit.CodeSandBoxTest.executeCode" />
         <item itemvalue="Application.MainApplication" />
-        <item itemvalue="Application.WxOpenConfig" />
       </list>
     </recent_temporary>
   </component>
@@ -378,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702288895544</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="流程测试调整完毕">
+      <created>1702353352659</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702353352659</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +368,8 @@
     <MESSAGE value="提交" />
     <MESSAGE value="提交测试" />
     <MESSAGE value="实现Java代码编译" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现Java代码编译" />
+    <MESSAGE value="流程测试调整完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value="流程测试调整完毕" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
